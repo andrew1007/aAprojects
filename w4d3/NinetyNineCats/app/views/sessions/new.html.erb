@@ -1,0 +1,15 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<form action="<%= session_url(@user) %>" method="post">
+<label for="user_user_name">User Name</label>
+<input id='user_user_name' type="text" name="user[user_name]" value="">
+
+<label for="user_password">Password</label>
+<input id="user_password" type="text" name="user[password]" value="">
+
+<input type="submit" value="log in">
+
+
+
+</form>
