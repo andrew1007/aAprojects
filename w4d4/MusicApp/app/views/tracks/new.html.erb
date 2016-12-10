@@ -1,0 +1,17 @@
+<%= type = action == :edit ? track_url(@track) : tracks_url %>
+<%= method = action == :edit? "patch" : "post" %>
+
+<form action=" <%= type %> " method="post">
+  <input type="hidden" name="_method" value="<%= method %>">
+
+  <label for="song_title">Song title</label>
+  <input type="textarea" name="track[name]" value="">
+  <br>
+
+  <label for="artist">Artist</label>
+  <select name="track[album_id]" >
+    <% Album.all.each do |album| %>
+      <option value="<%= album_id %>"> <%= album.name %> </option>
+    <% end %>
+  </select>
+</form>

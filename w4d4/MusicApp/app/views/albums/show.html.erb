@@ -1,0 +1,9 @@
+<h1>Albums#show</h1>
+<p>Find me in app/views/albums/show.html.erb</p>
+
+<%= @album.name %>
+
+<br>
+<%= link_to "back to artist", band_url(@album.band_id) %>
+<%= button_to "Edit Album",  edit_album_url, method: :get%>
+<%= button_to "Delete Album", album_url, method: :delete %>

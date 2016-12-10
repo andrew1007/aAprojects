@@ -1,0 +1,32 @@
+<% method = (action == :edit ? "patch" : "post") %>
+<% type = action == :edit ? album_url(@album) : albums_url %>
+<% album = @album %>
+
+<form action="<%= type %>" method="post">
+  <input type="hidden" name="_method" value="<%= method %>">
+  <label for="name">Name</label>
+  <input id = "name" type="text" name="album[name]" value="<%= album.name %>">
+  <br>
+
+  <label for="band">Band</label>
+  <select name="album[band_id]">
+    <% Band.all.each do |band| %>
+      <option value="<%= band.id %>"> <%= band.name %> </option>
+    <% end %>
+  </select>
+  <br>
+  <label for="type"></label>
+  <% ["live", "studio"].each do |style| %>
+    <input id="type" type="radio" name="album[style]" value="<%= style %>" <%= album.style == style ? "checked" : "" %> ><%= style %><br>
+  <% end %>
+
+  <label for="year">Year</label>
+  <select class="year" name="album[year]">
+    <% (1900..Date.current.year).to_a.reverse.each do |yr| %>
+      <option value="<%= yr %>"><%= yr %></option>
+    <% end %>
+  </select>
+  <br>
+
+  <input type="submit" value="<%= action == :edit ? "Update album" : "Create album" %>" >
+</form>
