@@ -1,0 +1,27 @@
+<% if action == :edit%>
+  <% action_url = sub_url(sub) %>
+<% else %>
+  <% action_url = subs_url %>
+<% end %>
+
+
+<form action="<%= action_url %>" method="post">
+  <% if action == :edit %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="title">Title</label>
+  <input type="text" name="sub[title]" value="<%= sub.title %>" id="title">
+
+  <br><br>
+
+  <label for="description">Description</label>
+  <textarea name="sub[description]" rows="8" cols="80"><%= sub.description %></textarea>
+
+  <br><br>
+
+  <input type="submit" value="Save">
+
+</form>

@@ -1,0 +1,16 @@
+<h1> Subreddits </h1>
+
+<ul>
+  <% @subs.each do |s| %>
+    <li>
+      <%= link_to "#{s.title}", sub_url(s) %>
+    </li>
+    <% if s.user_id == current_user.id %>
+      <%= button_to 'Edit', edit_sub_url(s), method: :get %>
+    <% end %>
+  <% end %>
+</ul>
+
+<br>
+
+<%= link_to 'Create', new_sub_url %>

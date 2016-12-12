@@ -1,0 +1,20 @@
+p "Input your email"
+email_in = gets.chomp
+
+p "What do you want to do?"
+p "0. Create shortened URL"
+p "1. Visit shortened URL"
+url_option = gets.chomp.to_i
+if url_option == 0
+  p "Type in your long URL"
+  long_url = gets.chomp
+  short_url = ShortenedUrl.create_for_user_and_long_url!(email_in, long_url)
+  p "Short url is #{short_url.short_url}"
+else
+  p "Type in the shortened URL"
+  short_url = gets.chomp
+  long_url_match = User.find_by(email: email_in).retrieve_long_url(short_url)
+end
+
+p "Launching #{long_url_match} ..."
+p "Goodbye!"

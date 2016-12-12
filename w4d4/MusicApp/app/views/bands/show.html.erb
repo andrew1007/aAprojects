@@ -1,0 +1,12 @@
+<h1><%= @band.name %></h1>
+
+<br>
+<% @band.albums.each do |album| %>
+
+  <%= link_to "#{album.name}", album_url(album) %>
+  <br>
+<% end %>
+<br>
+
+<%= button_to "Delete Artist", band_url, method: :delete %>
+<%= link_to "Back home", bands_url %>

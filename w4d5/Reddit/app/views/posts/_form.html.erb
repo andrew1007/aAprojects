@@ -1,0 +1,42 @@
+<% if action == :edit %>
+  <% action_url = post_url(post) %>
+<% else %>
+  <% action_url = posts_url %>
+<% end %>
+
+<form  action="<%= action_url %>" method="post">
+  <% if action == :edit %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+
+  <label for="title">Title</label>
+  <input id="title" type="text" name="post[title]" value="<%= post.title %>">
+  <br>
+  <label for="url">URL</label>
+  <input id="url" type="text" name="post[url]" value="<%= post.url %>">
+  <br>
+
+  <label for="content">Content</label>
+  <textarea id="content" name="post[content]" rows="8" cols="80"></textarea>
+  <br>
+
+  <!-- <%# if action == :create %> -->
+    <!-- <input type="hidden" name="post[sub_id]" value="<%#= @subreddit.id %>"> -->
+  <!-- <%# end %> -->
+
+  <label for="subs">Subs</label>
+  <input id="subs" type="hidden" name="post[sub_ids][]" value="">
+<br>
+  <% Sub.all.each do |subreddit| %>
+    <label><%= subreddit.title %>
+      <input type="checkbox"
+              name="post[sub_ids][]"
+              value="<%= subreddit.id %>"
+              <%= "checked" if post.subs.include?(subreddit) %>>
+    </label>
+
+  <% end %>
+  <input type="submit" value="Submit">
+</form>
