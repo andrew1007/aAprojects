@@ -1,0 +1,49 @@
+.ttt {
+  width: 500px;
+  margin: 0 auto;
+  background: none;
+}
+
+li {
+  float: left;
+}
+
+.square {
+  outline: 5px solid black;
+  width: 150px;
+  height: 150px;
+  float: left;
+  background-color: gray;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  font-size: 100px;
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+.x {
+  background-color: white;
+  list-style: none;
+}
+
+.o {
+  background-color: white;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.win {
+  background-color: green;
+}
+
+.lose {
+  background-color: red;
+}

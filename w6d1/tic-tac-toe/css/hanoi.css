@@ -1,0 +1,37 @@
+.pile {
+  width: 100px;
+  height: 60px;
+  background: none;
+  float: left;
+  border-bottom: 10px solid black;
+  margin-right: 30px;
+}
+
+.disc-1 {
+  width: 30px;
+  height: 20px;
+  background:gray;
+  justify-content: center;
+  border-radius: 15px;
+}
+.disc-2 {
+  width: 60px;
+  height: 20px;
+  background:gray;
+  border-radius: 15px;
+}
+.disc-3 {
+  width: 90px;
+  height: 20px;
+  background:gray;
+  border-radius: 15px;
+}
+
+.pile:hover {
+  border-bottom: 10px solid blue;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 10px solid red;
+}
