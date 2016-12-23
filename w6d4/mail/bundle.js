@@ -84,8 +84,9 @@
 	Router.prototype.activeRoute = function () {
 	  let hashFrag = window.location.hash
 	  hashFrag = hashFrag.replace("#", "")
-	  let component = this.routes[hashFrag]
-	  return component
+	  return hashFrag
+	  // let component = this.routes[hashFrag]
+	  // return component
 	};
 	module.exports = Router
 
