@@ -1,0 +1,58 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  // font-size: 18px;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.left-nav > ul > li {
+  margin: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.right-nav > ul > li > button{
+  justify-content: flex-end;
+  display: flex;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.auth-button {
+  border-radius: 5px;
+  margin-right: 15px;
+  color: white;
+  background-color: $blue;
+  padding: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.fa-cog{
+  font-size: 100px;
+}
+.right-nav > ul > li:last-of-type {
+
+}
+.right-nav > ul {
+  display: flex;
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+  background-color: black;
+}
+
+.left-nav span {
+
+}
+
+
+.right-nav i {
+
+}

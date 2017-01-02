@@ -1,0 +1,33 @@
+// Use the gear_dropdown.png screenshot as a style guide
+.gear-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  border: 1px solid $light-gray;
+  z-index: 1;
+  padding: 10px;
+  width: 210px;
+  box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09)
+}
+
+.gear-dropdown li {
+  padding: 5px;
+}
+
+.editions {
+  position: relative;
+  // right: 10px;
+  z-index: 1;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none
+}
+
+.help {
+  position: relative;
+  z-index: 1;
+  border-top: 2px solid $light-gray;
+  padding-top: 10px;
+}
