@@ -8,6 +8,11 @@ export const receiveAllPokemon = pokemon => ({
   pokemon
 });
 
+export const receiveAllPokemonDetail = pokemonDetail =>({
+  type: RECEIVE_ALL_POKEMON_DETAILS,
+  pokemonDetail
+});
+
 export const requestAllPokemon = () => (dispatch) => {
   return APIUtil.fetchAllPokemon()
     .then(pokemon => dispatch(receiveAllPokemon(pokemon)));
