@@ -1,7 +1,6 @@
 {
   "name": "pokedex",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -24,5 +23,15 @@
     "react-router": "^3.0.0",
     "redux": "^3.6.0",
     "webpack": "^1.14.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/npm/npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/npm/npm/issues"
+  },
+  "homepage": "https://github.com/npm/npm#readme",
+  "devDependencies": {},
+  "description": ""
 }

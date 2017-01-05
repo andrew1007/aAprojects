@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   timeout: 5000
-  host: localhost
+  host: ""
 
 development:
   <<: *default
@@ -60,4 +60,3 @@ development:
 test:
   <<: *default
   database: pokedex_test
-

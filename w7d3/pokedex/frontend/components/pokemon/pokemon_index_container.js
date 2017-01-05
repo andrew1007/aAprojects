@@ -1,8 +1,8 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { requestAllPokemon } from '../../actions/pokemon_actions';
 import PokemonIndex from './pokemon_index';
-import {selectAllPokemon} from '../../reducers/selector';
-
+import { selectAllPokemon } from '../../reducers/selector';
+import { PokemonIndexItem } from './pokemon_index_item';
 
 const mapStateToProps = state => ({
   pokemon: selectAllPokemon(state)
