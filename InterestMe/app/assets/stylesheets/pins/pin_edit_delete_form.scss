@@ -1,0 +1,28 @@
+.pin-edit-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  font-size: 25px;
+
+}
+
+.pin-edit-form form {
+  padding-top: 10px;
+  margin-top: 10px;
+  display: block;
+}
+
+.pin-edit-form textarea {
+  margin-top: 8px;
+  width: 300px;
+  height: 100px;
+}
+
+#pin-edit-title {
+  margin-bottom: 20px;
+}
+
+.ReactModal__Content__Pin{
+  padding:50px !important;
+}

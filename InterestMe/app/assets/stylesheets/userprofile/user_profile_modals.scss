@@ -1,0 +1,34 @@
+.followed-follower-modal {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.followers-modal {
+  vertical-align: middle;
+}
+
+.followers-modal button {
+  display:flex;
+  height: 40px;
+  margin-bottom: 13px;
+  font-size: 30px;
+  width: 400px;
+  align-items: flex-start;
+}
+
+.followers-modal button img {
+  height: 30px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.follow-username {
+  padding-bottom: 50px;
+}
+
+.follow-user-button button{
+  vertical-align: middle;
+}

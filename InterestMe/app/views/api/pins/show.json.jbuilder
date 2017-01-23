@@ -1,0 +1,1 @@
+json.pins @board.pins

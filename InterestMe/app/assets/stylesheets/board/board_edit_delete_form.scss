@@ -1,0 +1,47 @@
+.board-edit-form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top:110px;
+  left:0px;
+  height:20;
+  width:100%;
+  background-color: #d7432d;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  z-index: 15;
+}
+
+.board-edit-form input {
+  border-color: white;
+  color: #ffe0e0;
+  margin-right: 15px;
+}
+
+.delete-confirm-form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top:110px;
+  left:0px;
+  height:35;
+  width:100%;
+  background-color: #d7432d;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  vertical-align: middle;
+    z-index: 15;
+}
+
+#delete-confirm {
+  line-height: 40px;
+  text-align:center;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.confirm-delete-button {
+  padding: 0px 6px 0px 6px;
+}

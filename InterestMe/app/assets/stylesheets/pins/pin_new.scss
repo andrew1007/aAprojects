@@ -1,0 +1,81 @@
+.new-pin-modal{
+  display: flex;
+  height: 640px;
+  width: 410px;
+  flex-direction: row;
+  padding-top: 30px !important;
+}
+
+.new-pin-form {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.new-pin-textarea {
+  width:300px;
+  height:80px;
+}
+
+.click-to-upload button {
+  width: 100%;
+  background-color: white;
+  color: #d7432d;
+  border: dashed 2px;
+  border-color: #d7432d;
+}
+
+.click-to-upload button:hover {
+  width: 100%;
+  background-color: white;
+  color: #d7432d;
+  border: dashed 2px;
+  border-color: #d7432d;
+}
+
+.original-filename {
+  display: flex;
+  width:400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-preview {
+  height: 300px;
+  width: 400px;
+  margin-top: -40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  border: dashed 2px;
+  border-color: #d7432d;
+  margin-bottom: 15px;
+}
+
+.upload-text {
+  margin-left: 10px;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  color: #d7432d;
+  font-size: 25px;
+}
+
+.image-preview img {
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.upload-mini-text {
+  color: #d7432d;
+  font-size: 20px;
+}
+
+.new-pin-image-preview {
+  width: 500px;
+  height: auto;
+}

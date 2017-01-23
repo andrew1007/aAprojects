@@ -1,0 +1,64 @@
+// Place all the styles related to the boards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.board-overhead-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 110px;
+  width: 100%;
+  background-color: #d7432d;
+  margin-left: -10px;
+  padding: 0px 12px 0px 6px;
+}
+
+#board-name {
+  background-color: transparent;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  margin-top: 7px;
+}
+
+.author-edit-flexbox{
+  height: 65px;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.owner-edit-buttons {
+  margin-left: 15px;
+  display: flex-box;
+  flex-direction: row;
+}
+
+.owner-edit-buttons button {
+  padding: 1px;
+}
+
+.owner-edit-buttons:hover {
+  // padding: 1px;
+}
+
+#board-author {
+  background-color: transparent;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0px 0px 10px 10px;
+}
+
+#edit-icon {
+  background-color: transparent;
+  margin: 7px 0px 0px 5px;
+  padding: 7px;
+}
+
+#edit-icon button:hover {
+  background-color: transparent;
+}
